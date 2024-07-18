@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #1e1e1e, #333333);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .container-fluid {
+      height: 100%;
+    }
+
+    .container-centered {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .navbar-inverse {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: none;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: #fff;
+    }
+    .navbar-inverse .navbar-brand {
+      color: #fff;
+    }
+    .icon-bar {
+      background-color: #fff;
+    }
+
+    .sidenav {
+      background-color: rgba(50, 50, 50, 0.9);
+      color: #fff;
+      border-right: 1px solid #444;
+      height: 100%;
+      position: fixed;
+      padding-top: 20px;
+    }
+    .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+      color: #fff;
+      background-color: #007bff;
+    }
+    .nav-pills>li>a {
+      color: #007bff;
+    }
+
+    .main-content {
+      margin-left: 16.6667%;
+      padding: 15px;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .well {
+      background-color: rgba(50, 50, 50, 0.8);
+      color: #fff;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        position: relative;
+        width: 100%;
+        border-right: none;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .well {
+        padding: 10px;
+      }
+      .well h4 {
+        font-size: 16px;
+      }
+      .well p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid container-centered">
+  <div class="row content">
+    <div class="col-sm-2 sidenav hidden-xs">
+      <h2><i class="fas fa-globe"></i> Enego</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="booking.html"><i class="fas fa-book-open"></i> Booking</a></li>
+        <li><a href="#section4"><i class="fas fa-history"></i> History</a></li>
+      </ul><br>
+    </div>
+    
+    <div class="col-sm-10 main-content">
+      <div class="well">
+        <h4><i class="fas fa-chart-line"></i> Dashboard</h4>
+        <p>Some text..</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <div class="well">
+            <h4><i class="fas fa-users"></i> Users</h4>
+            <p>1 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="well">
+            <h4><i class="fas fa-file-alt"></i> Pages</h4>
+            <p>100 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="well">
+            <h4><i class="fas fa-clock"></i> Sessions</h4>
+            <p>10 Million</p> 
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="well">
+            <h4><i class="fas fa-tachometer-alt"></i> Bounce</h4>
+            <p>30%</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="well">
+            <p>Text</p> 
+            <p>Text</p> 
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-xs-12">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="well">
+            <p>Text</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

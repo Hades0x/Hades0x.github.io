@@ -1,0 +1,12 @@
+create user
+   METHOD :POST   URL : http://localhost:3000/user/
+
+   Login 
+   METHOD : POST URL : http://localhost:3000/user/Login
+
+   add Booking 
+   METHOD : POST   URL : http://localhost:3000/booking/addbooking
+
+   get bookings for user 
+
+   METHOD : GET URL : http://localhost:3000/user/booking/:id
